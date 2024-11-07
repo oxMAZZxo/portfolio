@@ -39,14 +39,22 @@ main {
     margin-bottom: 2em;
 }
 
+.intro h2{
+    font-size: 2em;
+}
+
+.intro p{
+    font-size: 1em;
+}
+
 .projects {
-    display: grid;
+    display:grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5em;
 }
 
 .project {
-    background: #fff;
+    background: #ffffff;
     padding: 1em;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     border-radius: 5px;
@@ -67,8 +75,16 @@ main {
     font-size: 1.4em;
 }
 
-.project p {
+/* Style the first paragraph in each project to be italic */
+.project p:nth-of-type(1) {
+    font-style: italic;
     font-size: 0.9em;
+}
+
+/* Style the second paragraph in each project to be normal font style */
+.project p:nth-of-type(2) {
+    font-style: normal;
+    font-size: 0.8em;
 }
 
 footer {
