@@ -68,7 +68,8 @@ main {
     padding: 1em;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     border-radius: 5px;
-    transition: transform 0.3s ease;
+    transition: transform 0.15s ease;
+    height: 430px;
 }
 
 .project-link{
