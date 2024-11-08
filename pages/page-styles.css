@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1.5em 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5em;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+main {
+    max-width: 1000px;
+    margin: 2em auto;
+    padding: 1em;
+}
+
+.video {
+    display: flex;
+    justify-content: center; /* Centers the video-wrapper horizontally */
+    margin: 2em 0;
+}
+
+/* Video Wrapper to Maintain Aspect Ratio */
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+}
+
+/* Responsive Iframe */
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5em 0;
+    background: #333;
+    color: #fff;
+}
+
+footer p {
+    margin: 0.5em 0;
+}
+
+footer a {
+    color: #ffc107;
+    text-decoration: none;
+}
