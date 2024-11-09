@@ -39,7 +39,7 @@ header p {
 }
 
 main {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 2em auto;
     padding: 1em;
 }
@@ -69,8 +69,8 @@ main {
     text-align: center;
     padding: 1em;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    border-radius: 5px;
-    transition: transform 0.15s ease;
+    border-radius: 10px;
+    transition: 0.15s;
     height: 100%;
     
 }
@@ -82,11 +82,12 @@ main {
 
 .project:hover {
     transform: scale(1.05);
+    border-radius: 30px;
 }
 
 .project img {
     max-width: 100%;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .project h3 {
