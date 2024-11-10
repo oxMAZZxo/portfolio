@@ -68,11 +68,10 @@ main {
     background: #000000;
     text-align: center;
     padding: 1em;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
     border-radius: 10px;
-    transition: 0.15s;
     height: 100%;
-    
+    transition: 0.15s;
 }
 
 .project-link{
@@ -106,18 +105,23 @@ main {
 }
 
 footer {
-    
     text-align: center;
     padding: 1.5em 0;
-    background: #333;
+    background: linear-gradient(180deg, #1c1c1c, #333333);
     color: #fff;
-}
-
-footer p {
-    margin: 0.5em 0;
 }
 
 footer a {
     color: #ffce3a;
     text-decoration: none;
+}
+
+footer a img {
+    width: 5em;
+    padding: 5px;
+    transition: 0.15s;
+}
+
+footer a img:hover{
+    transform: scale(1.2);
 }
