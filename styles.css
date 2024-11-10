@@ -7,14 +7,26 @@
 
 body {
     font-family: Arial, sans-serif;
-    color: #e3e3e3;
-    background-color: #1c1c1c;
+    color: #ffffff;
+    background-color: #284B63;
     line-height: 1.6;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 header {
-    background: linear-gradient(180deg, #333333,#1c1c1c);
-    color: #ffffff;
+    background: linear-gradient(180deg, #356382,#284B63);
     padding: 1.5em 0;
     text-align: center;
 }
@@ -61,14 +73,25 @@ main {
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5em;
+    animation: slideDown ease 0.8s;
+    animation-fill-mode: forwards; /* Keeps the final position */
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-50px); /* Start slightly above */
+    }
+    100% {
+        transform: translateY(0); /* End at the normal position */
+    }
 }
 
 .project {
-    color: #ffffff;
-    background: #000000;
+    color: #284B63;
+    background: #ffffff;
     text-align: center;
     padding: 1em;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 8px #3C6E71;
     border-radius: 10px;
     height: 100%;
     transition: 0.15s;
@@ -107,7 +130,7 @@ main {
 footer {
     text-align: center;
     padding: 1.5em 0;
-    background: linear-gradient(180deg, #1c1c1c, #333333);
+    background: linear-gradient(180deg, #284B63, #356382);
     color: #fff;
 }
 
