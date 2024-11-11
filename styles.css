@@ -206,15 +206,21 @@ main {
 }
 
   /* Grid layout for different screen sizes */
+@media (min-width: 300px) {
+    .image-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
 @media (min-width: 600px) {
     .image-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(8, 1fr);
     }
 }
 
 @media (min-width: 900px) {
     .image-grid {
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(5, 1fr);
     }
 }
 
