@@ -18,6 +18,7 @@ nav{
     height: 80px;
     align-items: center;
     justify-content: space-evenly;
+    padding: 0 1em;
 }
 
 .nav-btn{

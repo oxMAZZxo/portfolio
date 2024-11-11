@@ -19,6 +19,7 @@ nav{
     height: 80px;
     align-items: center;
     justify-content:space-evenly;
+    padding: 0 1em;
 }
 
 .nav-btn{
@@ -203,6 +204,12 @@ main {
     height: auto;
     display: inline-block;
     border-radius: 8px;
+}
+
+@media (min-width: 100px) {
+    .image-grid{
+        grid-template-columns: repeat(3,1fr);
+    }
 }
 
   /* Grid layout for different screen sizes */
