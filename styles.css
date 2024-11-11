@@ -18,12 +18,7 @@ nav{
     width: 100%;
     height: 80px;
     align-items: center;
-    justify-content: space-evenly;
-}
-
-nav a{
-    text-decoration: none;
-    color: inherit;
+    justify-content:space-evenly;
 }
 
 .nav-btn{
@@ -38,12 +33,17 @@ nav a{
     width: 100%;
 }
 
-.nav-btn:hover{
-    transform: scale(1.2);
+nav a{
+    text-decoration: none;
+    color: inherit;
 }
 
 .page-link{
     transition: 0.2s;
+}
+
+.nav-btn:hover{
+    transform: scale(1.2);
 }
 
 .page-link:hover{
@@ -64,6 +64,18 @@ header {
     background-color: #284B63;
     padding: 1.5em 0;
     text-align: center;
+    animation: slideFromLeft ease 0.7s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideFromLeft {
+    0% {
+        transform: translateX(-1000px); /* Start slightly above */
+    }
+    100% {
+        transform: translateX(0); /* End at the normal position */
+    }
 }
 
 .pageHeader p:nth-of-type(1) {
@@ -98,10 +110,22 @@ main {
     padding: 0em 2em;
     text-align:justify;
     margin-bottom: 2em;
+    animation: slideFromRight ease 0.7s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .intro p{
     font-size: 1em;
+}
+
+@keyframes slideFromRight{
+    0%{
+        transform: translateX(1000px);
+    }
+    100%{
+        transform: translateX(0);
+    }
 }
 
 .projects {
@@ -162,37 +186,40 @@ main {
     font-size: 0.8em;
 }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-  }
-  
-  /* Create four equal columns that sits next to each other */
-  .column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-  }
-  
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
+.image-grid {
+    display: grid;
+    border-radius: 10px;
+    margin: auto;
+    padding: 0em 2em;
+    gap: 10px;
     width: 100%;
-  }
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 800px) {
-    .column {
-      flex: 50%;
-      max-width: 50%;
+    animation: slideFromRight ease 0.7s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+  /* Grid layout for different screen sizes */
+@media (min-width: 600px) {
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
+}
+
+@media (min-width: 900px) {
+    .image-grid {
+        grid-template-columns: repeat(6, 1fr);
     }
-  }
+}
+
+@media (min-width: 1200px) {
+    .image-grid {
+        grid-template-columns: repeat(8, 1fr);
+    }
+}
