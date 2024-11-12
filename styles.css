@@ -223,5 +223,10 @@ footer {
 }
 
 footer p {
-    padding: 1em 1em;
+    transition: 0.2s;
+}
+
+footer p:hover{
+    color:#9775fa;
+    transform: scale(1.1);
 }
