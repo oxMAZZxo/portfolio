@@ -210,3 +210,15 @@ main {
         grid-template-columns: repeat(8, 1fr);
     }
 }
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    animation: slideFromLeft ease 0.7s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+footer p {
+    padding: 1em 1em;
+}
