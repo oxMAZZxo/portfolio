@@ -8,7 +8,7 @@
 body {
     font-family: Arial, sans-serif;
     color: #ffffff;
-    background-color: #284B63;
+    background-color: #1b1f22;
     line-height: 1.6;
     overflow-x: hidden;
 }
@@ -28,7 +28,6 @@ body::-webkit-scrollbar {
 }
 
 header {
-    background-color: #284B63;
     padding: 1.5em 0;
     text-align: center;
     animation: slideFromLeft ease 0.7s;
@@ -121,11 +120,11 @@ main {
 }
 
 .project {
-    color: #284B63;
-    background: #ffffff;
+    color: #ffffff;
+    background: #000000;
     text-align: center;
     padding: 1em;
-    box-shadow: 0 4px 8px #3C6E71;
+    box-shadow: 0 4px 8px #000000;
     border-radius: 10px;
     height: 100%;
     transition: 0.15s;
@@ -139,6 +138,7 @@ main {
 .project:hover {
     transform: scale(1.05);
     border-radius: 30px;
+    background-color: #9775fa;
 }
 
 .project img {
@@ -152,13 +152,16 @@ main {
 }
 
 .project p:nth-of-type(1) {
+    font-weight: 300;
     font-style: italic;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 .project p:nth-of-type(2) {
+    padding: 1em 0;
+    font-weight: 500;
     font-style: normal;
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 
 .image-grid {
