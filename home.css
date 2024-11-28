@@ -8,11 +8,8 @@
     }
 }
 
-* {
-    border: 1px solid red;
-}
-
 header {
+    border: 5px solid red;
     max-width: 36em;
     text-align: start;
     padding: 1.5em 0em;
@@ -20,6 +17,7 @@ header {
 }
 
 header h1 {
+    border: 5px solid red;
     font-size: 5em;
     font-weight: 5000;
     animation: slideFromLeftWithBounce ease 0.5s;
@@ -46,12 +44,14 @@ header h1 {
 }
 
 .external-links{
+    border: 5px solid red;
     animation: fadeIn ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
 
 .btn{
+    border: 5px solid red;
     width: 3.5em;
     height: 3.5em;
     display: inline-block;
