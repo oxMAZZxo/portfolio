@@ -15,9 +15,9 @@ body {
     overflow-x: hidden;
 }
 
-/* body::-webkit-scrollbar {
+body::-webkit-scrollbar {
     display: none;
-} */
+}
 
 main {
     max-width: 1200px;

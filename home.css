@@ -9,7 +9,7 @@
 }
 
 header {
-    max-width: 70%;
+    max-width: 90%;
     text-align: start;
     padding: 1em 0em;
     margin: auto;
@@ -19,12 +19,14 @@ header {
 header h1 {
     font-size: 5em;
     font-weight: 5000;
+    padding: 0 10%;
     animation: slideFromLeftWithBounce ease 0.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
 
 .pageHeader p:nth-of-type(1) {
+    padding: 0 10%;
     font-style: bold;
     font-weight: 2500;
     font-size: 2.5em;
@@ -34,7 +36,7 @@ header h1 {
 }
 
 .pageHeader p:nth-of-type(2) {
-    padding: 0.5em 0em;
+    padding: 0.5em 10%;
     font-size: 1em;
     font-style: normal;
     animation: fadeIn ease 1s;
@@ -43,6 +45,7 @@ header h1 {
 }
 
 .external-links{
+    padding: 0.5em 10%;
     animation: fadeIn ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -65,6 +68,22 @@ header h1 {
 .btn:hover{
     background-color: #9d7efb;
     transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    header h1{
+        font-size: 4em;
+    }
+
+    .pageHeader p:nth-of-type(1) {
+        padding: 0 10%;
+        font-style: bold;
+        font-weight: 2500;
+        font-size: 2em;
+        animation: slideFromRightWithBounce ease 0.5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
 }
 
 @keyframes slideFromLeftWithBounce {
