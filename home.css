@@ -8,6 +8,10 @@
     }
 }
 
+* {
+    border: 1px solid red;
+}
+
 header {
     max-width: 36em;
     text-align: start;
