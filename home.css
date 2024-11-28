@@ -9,10 +9,11 @@
 }
 
 header {
-    max-width: 36em;
+    max-width: 70%;
     text-align: start;
-    padding: 1.5em 0em;
+    padding: 1em 0em;
     margin: auto;
+    overflow: hidden;
 }
 
 header h1 {
