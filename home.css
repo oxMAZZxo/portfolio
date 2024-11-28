@@ -9,7 +9,6 @@
 }
 
 header {
-    border: 5px solid red;
     max-width: 36em;
     text-align: start;
     padding: 1.5em 0em;
@@ -17,7 +16,6 @@ header {
 }
 
 header h1 {
-    border: 5px solid red;
     font-size: 5em;
     font-weight: 5000;
     animation: slideFromLeftWithBounce ease 0.5s;
@@ -44,14 +42,12 @@ header h1 {
 }
 
 .external-links{
-    border: 5px solid red;
     animation: fadeIn ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
 
 .btn{
-    border: 5px solid red;
     width: 3.5em;
     height: 3.5em;
     display: inline-block;
@@ -72,48 +68,48 @@ header h1 {
 
 @keyframes slideFromLeftWithBounce {
     0% {
-        transform: translateX(-1000px);
+        transform: translateX(-150%);
     }
 
     65%{
-        transform: translateX(50px);
+        transform: translateX(5%);
     }
 
     100% {
-        transform: translateX(0);
+        transform: translateX(0%);
     }
 }
 
 @keyframes slideFromRightWithBounce {
     0% {
-        transform: translateX(1000px);
+        transform: translateX(150%);
     }
 
     65%{
-        transform: translateX(-50px);
+        transform: translateX(-5%);
     }
 
     100% {
-        transform: translateX(0);
+        transform: translateX(0%);
     }
 }
 
 @keyframes slideFromLeft {
     0% {
-        transform: translateX(-1000px);
+        transform: translateX(-150%);
     }
 
     100% {
-        transform: translateX(0);
+        transform: translateX(0%);
     }
 }
 
 @keyframes slideFromRight {
     0% {
-        transform: translateX(1000px);
+        transform: translateX(150%);
     }
 
     100% {
-        transform: translateX(0);
+        transform: translateX(0%);
     }
 }
