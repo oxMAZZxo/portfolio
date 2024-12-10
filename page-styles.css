@@ -10,14 +10,13 @@ header {
 }
 
 header h1 {
-    margin-bottom: 0.5em;
     font-size: 2.5em;
-
 }
 
 header p {
     font-size: 1.2em;
-    padding: 2.5em;
+    padding-top: 1em;
+    padding-bottom: 2em;
 
 }
 
@@ -99,5 +98,91 @@ header p {
 
     100%{
         opacity: 100%;
+    }
+}
+
+@media (min-width: 100px) {
+    .image-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .pageHeader h1{
+        font-size: 2.2em;
+    }
+
+    .pageHeader p{
+        font-size: 1.1em;
+    }
+
+    .description{
+        font-size: 0.9em;
+    }
+}
+
+/* Grid layout for different screen sizes */
+@media (min-width: 300px) {
+    .image-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .pageHeader h1{
+        font-size: 2.5em;
+    }
+
+    .pageHeader p{
+        font-size: 1.3em;
+    }
+
+    .description{
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 600px) {
+    .image-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .pageHeader h1{
+        font-size: 3em;
+    }
+
+    .pageHeader p{
+        font-size: 1.5em;
+    }
+
+    .description{
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 900px) {
+    .image-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    .pageHeader h1{
+        font-size: 3.2em;
+    }
+
+    .pageHeader p{
+        font-size: 1.8em;
+    }
+
+    .description{
+        font-size: 1.1em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .image-grid {
+        grid-template-columns: repeat(10, 1fr);
+    }
+    .pageHeader h1{
+        font-size: 3.5em;
+    }
+
+    .pageHeader p{
+        font-size: 2em;
+    }
+
+    .description{
+        font-size: 1.2em;
     }
 }
