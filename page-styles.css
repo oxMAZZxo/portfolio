@@ -1,4 +1,5 @@
 main{
+    max-width: 80%;
     animation: fadeIn ease 0.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
