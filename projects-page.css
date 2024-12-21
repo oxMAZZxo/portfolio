@@ -6,6 +6,7 @@ main{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5em;
+    padding: 0 1em;
     animation: slideDown ease 0.5s;
     animation-fill-mode: forwards;
 }
