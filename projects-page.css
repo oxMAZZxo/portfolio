@@ -4,8 +4,7 @@ main{
 
 .projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5em;
+    gap: 1em;
     padding: 0 1em;
     animation: slideDown ease 0.5s;
     animation-fill-mode: forwards;
@@ -41,20 +40,17 @@ main{
 
 .project h3 {
     margin: 0.5em 0;
-    font-size: 1.4em;
 }
 
 .project p:nth-of-type(1) {
     font-weight: 300;
     font-style: italic;
-    font-size: 1em;
 }
 
 .project p:nth-of-type(2) {
     padding: 1em 0;
     font-weight: 500;
     font-style: normal;
-    font-size: 0.9em;
 }
 
 @keyframes slideDown {
@@ -66,5 +62,91 @@ main{
     100% {
         transform: translateY(0);
         /* End at the normal position */
+    }
+}
+
+/* Grid layout for different screen sizes */
+@media (min-width: 300px) {
+    .projects{
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    .project h3 {
+        font-size: 1.2em;
+    }
+    
+    .project p:nth-of-type(1) {
+        font-size: 0.8em;
+    }
+    
+    .project p:nth-of-type(2) {
+        font-size: 0.7em;
+    }
+}
+
+@media (min-width: 500px){
+    .projects{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .project h3 {
+        font-size: 1.3em;
+    }
+    
+    .project p:nth-of-type(1) {
+        font-size: 0.9em;
+    }
+    
+    .project p:nth-of-type(2) {
+        font-size: 0.8em;
+    }
+}
+
+@media (min-width: 900px){
+    .projects{
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .project h3 {
+        font-size: 1.4em;
+    }
+    
+    .project p:nth-of-type(1) {
+        font-size: 1em;
+    }
+    
+    .project p:nth-of-type(2) {
+        font-size: 0.9em;
+    }
+}
+
+@media (min-width: 1200px){
+    .projects{
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .project h3 {
+        font-size: 1.5em;
+    }
+    
+    .project p:nth-of-type(1) {
+        font-size: 1.1em;
+    }
+    
+    .project p:nth-of-type(2) {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 1920px){
+    .projects{
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .project h3 {
+        font-size: 1.7em;
+    }
+    
+    .project p:nth-of-type(1) {
+        font-size: 1.3em;
+    }
+    
+    .project p:nth-of-type(2) {
+        font-size: 1.2em;
     }
 }
