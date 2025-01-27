@@ -13,6 +13,10 @@ nav {
     z-index: 1000;
 }
 
+nav p{
+    padding: 0% 0%;
+}
+
 nav a {
     font-size: 1.3em;
     font-weight: 500;

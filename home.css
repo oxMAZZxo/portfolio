@@ -8,8 +8,12 @@
     }
 }
 
+p{
+    padding: 0 10%;
+    font-size: 1em;
+}
+
 header {
-    max-width: 90%;
     text-align: start;
     padding: 1em 0em;
     margin: auto;
@@ -25,7 +29,7 @@ header h1 {
     animation-fill-mode: forwards;
 }
 
-.pageHeader h3 {
+header h3 {
     padding: 0 10%;
     padding-bottom: 0.5em;
     font-weight: 450;
@@ -35,12 +39,55 @@ header h1 {
     animation-fill-mode: forwards;
 }
 
-.pageHeader p {
-    padding: 0 10%;
-    font-size: 1em;
+header p {
     animation: fadeIn ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+}
+
+.quick-links{
+    animation: fadeIn ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.quick-links p{
+    padding: 0 10%;
+}
+
+.links-grid {
+    display: grid;
+    gap: 1em;
+    padding: 1em 10%;
+}
+
+.link {
+    color: #ffffff;
+    background: #000000;
+    text-align: center;
+    padding: 1em;
+    box-shadow: 0 4px 8px #000000;
+    border-radius: 10px;
+    height: 100%;
+    transition: 0.15s;
+    text-decoration: none;
+    color: inherit;
+}
+
+.link img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.link p:nth-of-type(2){
+    font-weight: 100;
+    font-size: 1em;
+}
+
+.link:hover {
+    transform: scale(1.05);
+    border-radius: 30px;
+    background-color: #9775fa;
 }
 
 .external-links{
@@ -122,11 +169,11 @@ header h1 {
     header h1{
         font-size: 2.9em;
     }
-    .pageHeader h3 {
+    header h3 {
         font-size: 1.8em;
     }
     
-    .pageHeader p{
+    main p{
         font-size: 1em;
     }
 
@@ -134,17 +181,30 @@ header h1 {
         width: 3em;
         height: 3em;
     }
+
+    .links-grid{
+        grid-template-columns: repeat(3, minmax(85px, 1fr));
+        gap: 0.5em;
+    }
+
+    .link p:nth-of-type(1){
+        font-size: 0.8em;
+    }
+
+    .link p:nth-of-type(2){
+        font-size: 0.5em;
+    }
 }
 
 @media (min-width: 600px) {
     header h1{
         font-size: 3.6em;
     }
-    .pageHeader h3 {
+    header h3 {
         font-size: 2.1em;
     }
     
-    .pageHeader p {
+    main p {
         font-size: 1.1em;
     }
 
@@ -153,17 +213,29 @@ header h1 {
         height: 3.1em;
     }
 
+    .links-grid{
+        grid-template-columns: repeat(3, minmax(100px, 1fr));
+        gap: 1em;
+    }
+
+    .link p:nth-of-type(1){
+        font-size: 1em;
+    }
+
+    .link p:nth-of-type(2){
+        font-size: 0.8em;
+    }
 }
 
 @media (min-width: 700px) {
     header h1{
         font-size: 4.2em;
     }
-    .pageHeader h3 {
+    header h3 {
         font-size: 2.2em;
     }
     
-    .pageHeader p {
+    main p {
         font-size: 1.2em;
     }
 
@@ -171,17 +243,25 @@ header h1 {
         width: 3.2em;
         height: 3.2em;
     }
+
+    .link p:nth-of-type(1){
+        font-size: 1.2em;
+    }
+
+    .link p:nth-of-type(2){
+        font-size: 1em;
+    }
 }
 
 @media (min-width: 900px) {
     header h1{
         font-size: 5.5em;
     }
-    .pageHeader h3 {
+    header h3 {
         font-size: 2.5em;
     }
     
-    .pageHeader p {
+    main p {
         font-size: 1.5em;
     }
 
@@ -189,18 +269,26 @@ header h1 {
         width: 3.5em;
         height: 3.5em;
     }
+
+    .link p:nth-of-type(1){
+        font-size: 1.3em;
+    }
+
+    .link p:nth-of-type(2){
+        font-size: 1em;
+    }
 }
 
 @media (min-width: 1200px) {
     header h1{
-        font-size: 7.4em;
+        font-size: 6.5em;
     }
 
-    .pageHeader h3 {
+    header h3 {
         font-size: 3em;
     }
     
-    .pageHeader p {
+    main p {
         font-size: 1.5em;
     }
 
@@ -208,19 +296,27 @@ header h1 {
         width: 4em;
         height: 4em;
     }
+
+    .link p:nth-of-type(1){
+        font-size: 1.8em;
+    }
+
+    .link p:nth-of-type(2){
+        font-size: 1.4em;
+    }
 }
 
 @media (min-width: 1920px) {
 
     header h1{
-        font-size: 9em;
+        font-size: 7.5em;
     }
 
-    .pageHeader h3 {
-        font-size: 4em;
+    header h3 {
+        font-size: 3.5em;
     }
     
-    .pageHeader p {
+    main p {
         font-size: 2em;
     }
 
