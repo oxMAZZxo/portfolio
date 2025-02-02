@@ -17,6 +17,12 @@ header h1 {
 header p {
     font-size: 1.5em;
     font-weight: 500;
+}
+
+header p:nth-of-type(2)
+{
+    font-size: 1.5em;
+    font-weight: 350;
     margin-bottom: 1em;
 }
 
@@ -71,6 +77,11 @@ header p {
     .intro{
         font-size: 1em;
     }
+    
+    header p:nth-of-type(2)
+    {
+        font-size: 1em;
+    }
 }
 
 @media (min-width: 600px) {
@@ -87,6 +98,11 @@ header p {
 
     .intro{
         font-size: 1.2em;
+    }
+    
+    header p:nth-of-type(2)
+    {
+        font-size: 1.5em;
     }
 }
 
@@ -105,6 +121,11 @@ header p {
     .intro{
         font-size: 1.2em;
     }
+
+    header p:nth-of-type(2)
+    {
+        font-size: 1.5em;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -121,6 +142,11 @@ header p {
 
     .intro{
         font-size: 1.4em;
+    }
+
+    header p:nth-of-type(2)
+    {
+        font-size: 2em;
     }
 }
 

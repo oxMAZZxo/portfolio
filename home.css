@@ -31,12 +31,17 @@ header h1 {
 
 header h3 {
     padding: 0 10%;
-    padding-bottom: 0.5em;
     font-weight: 450;
     font-size: 2.5em;
     animation: slideFromRightWithBounce ease 0.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+}
+
+header h3:nth-of-type(2)
+{
+    padding-bottom: 0.5em;
+    font-weight: 350;
 }
 
 header p {
@@ -194,6 +199,11 @@ header p {
     .link p:nth-of-type(2){
         font-size: 0.5em;
     }
+    
+    header h3:nth-of-type(2)
+    {
+        font-size: 1.3em;
+    }
 }
 
 @media (min-width: 600px) {
@@ -225,6 +235,11 @@ header p {
     .link p:nth-of-type(2){
         font-size: 0.8em;
     }
+
+    header h3:nth-of-type(2)
+    {
+        font-size: 1.6em;
+    }
 }
 
 @media (min-width: 700px) {
@@ -251,6 +266,11 @@ header p {
     .link p:nth-of-type(2){
         font-size: 1em;
     }
+
+    header h3:nth-of-type(2)
+    {
+        font-size: 1.7em;
+    }
 }
 
 @media (min-width: 900px) {
@@ -276,6 +296,11 @@ header p {
 
     .link p:nth-of-type(2){
         font-size: 1em;
+    }
+
+    header h3:nth-of-type(2)
+    {
+        font-size: 2em;
     }
 }
 
@@ -304,6 +329,11 @@ header p {
     .link p:nth-of-type(2){
         font-size: 1.4em;
     }
+
+    header h3:nth-of-type(2)
+    {
+        font-size: 2.5em;
+    }
 }
 
 @media (min-width: 1920px) {
@@ -323,5 +353,10 @@ header p {
     .btn{
         width: 5em;
         height: 5em;
+    }
+
+    header h3:nth-of-type(2)
+    {
+        font-size: 3em;
     }
 }
