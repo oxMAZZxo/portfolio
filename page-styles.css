@@ -18,7 +18,32 @@ header p {
     font-size: 1.2em;
     padding-top: 1em;
     padding-bottom: 2em;
+}
 
+.download{
+    padding: 3em 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.externalPageButton{
+    text-decoration: none;
+    color: inherit;
+    display: inline-flex; 
+    justify-content:space-evenly;
+    border-radius: 50px;
+    background-color: #8158fa;
+    transition: 0.2s;
+}
+
+.externalPageButton p{
+    font-weight: 500;
+    padding: 0% 0.5em;
+}
+
+.externalPageButton:hover{
+    background-color: #9d7efb;
+    transform: scale(1.1);
 }
 
 .video {
@@ -117,6 +142,12 @@ header p {
     .description{
         font-size: 0.9em;
     }
+    .externalPageButton{
+        height: 1.6em;
+    }
+    .externalPageButton p{
+        font-size: 0.7em;
+    }
 }
 
 /* Grid layout for different screen sizes */
@@ -135,6 +166,12 @@ header p {
     .description{
         font-size: 1em;
     }
+    .externalPageButton{
+        height: 2.7em;
+    }
+    .externalPageButton p{
+        font-size: 1.2em;
+    }
 }
 
 @media (min-width: 600px) {
@@ -151,6 +188,13 @@ header p {
 
     .description{
         font-size: 1em;
+    }
+
+    .externalPageButton{
+        height: 4.3em;
+    }
+    .externalPageButton p{
+        font-size: 2.4em;
     }
 }
 
@@ -169,6 +213,13 @@ header p {
     .description{
         font-size: 1.1em;
     }
+
+    .externalPageButton{
+        height: 7em;
+    }
+    .externalPageButton p{
+        font-size: 3.6em;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -185,5 +236,12 @@ header p {
 
     .description{
         font-size: 1.2em;
+    }
+
+    .externalPageButton{
+        height: 8em;
+    }
+    .externalPageButton p{
+        font-size: 5em;
     }
 }
