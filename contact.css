@@ -1,0 +1,55 @@
+main form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 500px;
+    margin: auto;
+}
+
+main form input {
+    border-radius: 10px;
+    height: 50px;
+    outline: #0a090c;
+    border-width: 1px;
+    padding: 0 1em;
+    font-family: Montserrat, sans-serif;
+
+}
+
+main form textarea {
+    resize: none;
+    border-radius: 10px;
+    height: 100px;
+    outline: #0a090c;
+    padding: 0.5em 1em;
+    border-width: 1px;
+    font-family: Montserrat, sans-serif;
+}
+
+
+main form input::placeholder,
+main form textarea::placeholder {
+    font-family: Montserrat, sans-serif;
+    font-size: 1em;
+}
+
+main form button {
+    font-family: Montserrat, sans-serif;
+    background-color: #8158fa;
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    font-weight: 600;
+    height: 50px;
+    width: 250px;
+    margin: auto;
+    border-radius: 50px;
+    border: none;
+    transition: 0.2s;
+
+}
+
+main form button:hover {
+    background-color: #9d7efb;
+    transform: scale(1.1);
+
+}
