@@ -2,7 +2,6 @@ main form {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    width: 500px;
     margin: auto;
 }
 
@@ -19,7 +18,7 @@ main form input {
 main form textarea {
     resize: none;
     border-radius: 10px;
-    height: 100px;
+    height: 150px;
     outline: #0a090c;
     padding: 0.5em 1em;
     border-width: 1px;
@@ -53,3 +52,36 @@ main form button:hover {
     transform: scale(1.1);
 
 }
+
+@media (min-width:350px) {
+    main form{
+        width: 320px;
+    }
+}
+
+@media (min-width:450px)
+{
+    main form {
+        width: 380px;
+    }
+}
+
+@media (min-width:500px)
+{
+    main form {
+        width: 400px;
+    }
+}
+
+@media (min-width: 600px) {
+    main form{
+        width: 500px;
+    }
+}
+
+@media (min-width: 600px) {
+    main form{
+        width: 600px;
+    }
+}
+
