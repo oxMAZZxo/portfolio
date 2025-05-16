@@ -33,3 +33,21 @@ nav a {
     color: #9775fa;
     transform: scale(0.9);
 }
+
+@media (min-width:300px) {
+    nav a{
+        font-size: 0.8em;
+    }
+}
+
+@media (min-width:400px) {
+    nav a{
+        font-size: 1em;
+    }
+}
+
+@media (min-width:600px) {
+    nav a{
+        font-size: 1.3em;
+    }
+}

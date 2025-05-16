@@ -224,7 +224,7 @@ header p {
     }
 
     .links-grid{
-        grid-template-columns: repeat(3, minmax(100px, 1fr));
+        grid-template-columns: repeat(4, minmax(100px, 1fr));
         gap: 1em;
     }
 
@@ -336,27 +336,3 @@ header p {
     }
 }
 
-@media (min-width: 1920px) {
-
-    header h1{
-        font-size: 7.5em;
-    }
-
-    header h3 {
-        font-size: 3.5em;
-    }
-    
-    main p {
-        font-size: 2em;
-    }
-
-    .btn{
-        width: 5em;
-        height: 5em;
-    }
-
-    header h3:nth-of-type(2)
-    {
-        font-size: 3em;
-    }
-}
