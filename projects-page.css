@@ -45,8 +45,8 @@ main {
     display: grid;
     gap: 1em;
     padding: 0% 1em;
-    animation: slideDown ease 0.5s;
-    animation-fill-mode: forwards;
+    /* animation: slideDown ease 0.5s;
+    animation-fill-mode: forwards; */
 }
 
 .project {
@@ -80,42 +80,49 @@ main {
     margin: 0.5em 0;
 }
 
-.project p:nth-of-type(1) {
-    font-weight: 300;
+.tagline {
+    font-weight: 200;
     font-style: italic;
 }
 
-.project p:nth-of-type(2) {
-    padding: 1em 0;
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4em;
+    justify-content: center; /* optional: center them like tags */
+    padding-top: 1em;
+}
+
+.skills p {
     font-weight: 500;
-    font-style: normal;
+    padding: 0em 0.3em;
+    border-radius: 5px;
 }
 
-@keyframes slideDown {
-    0% {
-        transform: translateY(-1000px);
-        /* Start slightly above */
-    }
-
-    100% {
-        transform: translateY(0);
-        /* End at the normal position */
-    }
+.hard{
+    background-color: rgb(47, 0, 128);
+    color: #ffffff;
 }
+
+.soft {
+    background-color: purple;
+    color: #ffffff;
+}
+
 
 /* Grid layout for different screen sizes */
 @media (min-width: 300px) {
-.intro h2 {
+    .intro h2 {
         font-size: 1.2em;
     }
 
-    .in-page-nav a{
-    font-size: 0.8em;
+    .in-page-nav a {
+        font-size: 0.8em;
 
     }
 
-.seperator{
-    font-size: 1.5em;
+    .seperator {
+        font-size: 1.5em;
 
     }
 
@@ -127,27 +134,32 @@ main {
         font-size: 1.2em;
     }
 
-    .project p:nth-of-type(1) {
+    .tagline {
         font-size: 0.8em;
     }
 
-    .project p:nth-of-type(2) {
-        font-size: 0.7em;
+    .skills p {
+        font-size: 0.8em;
+
     }
+
 }
 
 @media (min-width: 500px) {
-.intro h2 {
+    .intro h2 {
         font-size: 1.5em;
     }
-    .in-page-nav a{
-    font-size: 1em;
+
+    .in-page-nav a {
+        font-size: 1em;
 
     }
-.seperator{
-    font-size: 1.7em;
+
+    .seperator {
+        font-size: 1.7em;
 
     }
+
     .projects {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
@@ -156,13 +168,15 @@ main {
         font-size: 1.3em;
     }
 
-    .project p:nth-of-type(1) {
+    .tagline {
         font-size: 0.9em;
     }
 
-    .project p:nth-of-type(2) {
-        font-size: 0.8em;
+    .skills p {
+        font-size: 0.9em;
+
     }
+
 }
 
 @media (min-width: 900px) {
@@ -170,10 +184,11 @@ main {
         font-size: 2.2em;
     }
 
-        .in-page-nav a{
-    font-size: 1.2em;
+    .in-page-nav a {
+        font-size: 1.2em;
 
     }
+
     .projects {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
@@ -182,27 +197,26 @@ main {
         font-size: 1.4em;
     }
 
-    .project p:nth-of-type(1) {
+    .tagline {
         font-size: 1em;
-    }
-
-    .project p:nth-of-type(2) {
-        font-size: 0.9em;
     }
 }
 
 @media (min-width: 1200px) {
-.intro h2 {
+    .intro h2 {
         font-size: 2.5em;
     }
-.in-page-nav a{
-    font-size: 1.5em;
+
+    .in-page-nav a {
+        font-size: 1.5em;
 
     }
-    .seperator{
-    font-size: 2em;
+
+    .seperator {
+        font-size: 2em;
 
     }
+
     .projects {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
@@ -211,12 +225,13 @@ main {
         font-size: 1.5em;
     }
 
-    .project p:nth-of-type(1) {
+    .tagline {
         font-size: 1.1em;
     }
 
-    .project p:nth-of-type(2) {
+    .skills p {
         font-size: 1em;
+
     }
 }
 
@@ -231,11 +246,8 @@ main {
         font-size: 1.7em;
     }
 
-    .project p:nth-of-type(1) {
+    .tagline {
         font-size: 1.3em;
     }
 
-    .project p:nth-of-type(2) {
-        font-size: 1.2em;
-    }
 }
