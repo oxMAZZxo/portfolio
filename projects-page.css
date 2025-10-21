@@ -1,5 +1,8 @@
 main {
     max-width: 1200px;
+    animation: fadeIn ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .intro {
@@ -250,4 +253,14 @@ main {
         font-size: 1.3em;
     }
 
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
