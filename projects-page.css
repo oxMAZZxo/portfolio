@@ -16,6 +16,17 @@ main {
     font-weight: 300;
 }
 
+.logo-warning {
+    display: flex;
+    justify-content: center;
+    padding: 1em 0em;
+}
+
+.logo {
+    margin: 0em 0.5em;
+    display: flex;
+}
+
 .in-page-nav {
     display: flex;
     justify-content: center;
@@ -48,8 +59,6 @@ main {
     display: grid;
     gap: 1em;
     padding: 0% 1em;
-    /* animation: slideDown ease 0.5s;
-    animation-fill-mode: forwards; */
 }
 
 .project {
@@ -66,6 +75,13 @@ main {
 .project-link {
     text-decoration: none;
     color: inherit;
+}
+
+.icon-collection {
+    padding: 1em 0em;
+    display: flex;
+    justify-content: center;
+    gap: 0.3em;
 }
 
 .project:hover {
@@ -92,7 +108,8 @@ main {
     display: flex;
     flex-wrap: wrap;
     gap: 0.4em;
-    justify-content: center; /* optional: center them like tags */
+    justify-content: center;
+    /* optional: center them like tags */
     padding-top: 1em;
 }
 
@@ -102,7 +119,7 @@ main {
     border-radius: 5px;
 }
 
-.hard{
+.hard {
     background-color: rgb(47, 0, 128);
     color: #ffffff;
 }
@@ -117,6 +134,14 @@ main {
 @media (min-width: 300px) {
     .intro h2 {
         font-size: 1.2em;
+    }
+
+            .logo p {
+        font-size: 0.5em;
+    }
+
+    .logo img {
+        width: 15px;
     }
 
     .in-page-nav a {
@@ -146,11 +171,23 @@ main {
 
     }
 
+    .icon-collection img {
+        width: 20px;
+    }
+
 }
 
 @media (min-width: 500px) {
     .intro h2 {
         font-size: 1.5em;
+    }
+
+        .logo p {
+        font-size: 0.7em;
+    }
+
+    .logo img {
+        width: 18px;
     }
 
     .in-page-nav a {
@@ -187,6 +224,15 @@ main {
         font-size: 2.2em;
     }
 
+    .logo p {
+        font-size: 1em;
+    }
+
+    .logo img {
+        width: 25px;
+    }
+
+
     .in-page-nav a {
         font-size: 1.2em;
 
@@ -203,6 +249,12 @@ main {
     .tagline {
         font-size: 1em;
     }
+
+    .icon-collection img {
+        width: 25px;
+    }
+
+
 }
 
 @media (min-width: 1200px) {
