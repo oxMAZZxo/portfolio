@@ -29,26 +29,70 @@
     </nav>
 
     <main>
-        <header class="pageHeader">
-            <h1>City Skaters</h1>
-            <h3>Project On-going</h3>
-            <p>Unity & C# - Mobile Game Dev - Game Design - Systems Design - Gameplay Programming - Version Control - 2D
-                Animations - Design Patterns.</p>
-        </header>
-
-        <section class="video">
-            <div class="video-wrapper">
-                <iframe src="https://drive.google.com/file/d/1wAsGcDYhYTkDNp0E_ubIOooPl9k6l3WD/preview" width="720"
-                    height="480" allow="autoplay" allowfullscreen="true"></iframe>
-            </div>
-        </section>
+        <h1>City Skaters</h1>
+        <div class="external-links">
+            <a href="https://github.com/oxMAZZxo/FMP" target="_blank"><img src="../images/git-white-logo.svg"></a>
+        </div>
         
-        <section class="description">
-            <p>City Skaters is a casual, arcade-style endless runner designed for mobile platforms. Built with intuitive swipe-based controls, it lets players perform tricks, grind rails, and overcome urban obstacles on a procedurally generated map. The goal was to reimagine the mobile skateboarding experience—moving away from clunky virtual joysticks and toward smooth, responsive touch input that feels natural and fun.
+        <div class="jump-to">
+            <a href="#description">Description</a>
+            <a href="#contributions">Personal Contributions</a>
+            <a href="#tech-dets">Technical Details</a>
+            <a href="#challenges">Challenges</a>
+            <a href="#outcome">Outcome</a>
+        </div>
 
-                From procedural map generation to custom-built input and scoring systems, City Skaters is a technical and creative deep-dive into mobile gameplay design. The game also features scalable architecture and performance-optimised systems tailored for mobile hardware.
-                
-                This project is still growing, with ongoing refinements to gameplay mechanics and content. If you’ve made it this far and want to try the game—or share some feedback—I’d love to hear from you!</p>
+        <div class="video">
+            <div class="video-wrapper">
+                <iframe src="https://drive.google.com/file/d/1wAsGcDYhYTkDNp0E_ubIOooPl9k6l3WD/preview" width="1280"
+                            height="720" allow="autoplay" allowfullscreen="true">
+                        </iframe>
+            </div>
+        </div>
+
+        <section id="description">
+            <h3>Description</h3>
+            <p>A skateboarding game featuring a runtime procedurally generated map and swipe-based controls. Game
+                started as an academic project meant to showcase my technical ability as a programmer by implementing
+                features such as the procedurally generated map, and optimising the system to run smoothly on mobile
+                platforms.</p>
+        </section>
+
+        <section id="contributions">
+            <h3>Personal Contributions</h3>
+            <p>Designed and implemented all of the game systems with scalability and replay-ability in mind, all while
+                considering mobile platform restrictions such as memory and performance limitations, as well as
+                considering release to Google Play (currently in internal testing).</p>
+        </section>
+
+        <section id="tech-dets">
+            <h3>Technical Details</h3>
+            <p>Procedurally generated map uses Scriptable objects that define the relationship between different
+                obstacles and create object pools that contain each impediment that can be ‘spawned’ in the game.</p>
+            <p>Custom Touch Control Tool calculates swipe directions based on start and end input and invokes events
+                that can be subscribed to, passing on the swipe direction, and any other game system can react
+                accordingly. Although this tool doesn’t handle complex swipe gestures, it was very much an experimental
+                feature for me, as it was my first time creating something like this.</p>
+        </section>
+
+        <section id="challenges">
+            <h3>Challenges</h3>
+            <p>A major challenge was optimising the system. Many design changes were needed to improve the
+                procedural map, which not only spawns random obstacles but also considers their relationships. For
+                example, spawning a bench and another together allows longer trick combos. While simple, managing
+                multiple obstacle relationships enables playgrounds for 12+ trick combos, a complex system design. I
+                created runtime pool objects that handle these relationships, prevent repeated objects (sometimes
+                fail), and add variety with different obstacle skins.</p>
+        </section>
+
+        <section id="outcome">
+            <h3>Outcome</h3>
+            <p>As an academic project, this game (along with all the documentation and analysis behind it) earned me 1st
+                in BSc (Hons) Games Programming. It also received some recognition in the student showcase at
+                Ravensbourne University London, and I even received an award from the faculty for ‘Best In Show’.
+                Although it's still a work in progress with quite a few features to implement, the game is playable, and
+                I am pretty happy with how far it has come. If you want to give it a try, contact me to be added to the
+                internal testing track.</p>
         </section>
 
         <footer>
