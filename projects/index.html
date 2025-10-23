@@ -29,38 +29,60 @@
     </nav>
 
     <main>
+        <div class="intro">
+            <h2>Click on a Project Card to read more.</h2>
+            <div class="logo-warning">
+                <div class="logo">
+                    <img src="./images/gamepad.svg">
+                    <p>Playable</p>
+                </div>
+                <div class="logo">
+                    <img src="./images/construction-logo.svg">
+                    <p>Work in Progress</p>
+                </div>
+                <div class="logo">
+                    <img src="./images/git-white-logo.svg">
+                    <p>Public Repository</p>
+                </div>
+                <div class="logo">
+                    <img src="./images/lock-icon.svg">
+                    <p>Private</p>
+                </div>
+            </div>
+            <div class="in-page-nav">
+                <a href="#games">
+                    <p>Games</p>
+                </a>
+                <a href="#apps">
+                    <p>Applications</p>
+                </a>
+                <a href="#other">
+                    <p>Other</p>
+                </a>
+            </div>
+        </div>
+
+        <div id="games"></div>
+        <p class="seperator">Games</p>
         <section class="projects">
             <a href="./city-skaters/" class="project-link">
                 <div class="project">
                     <img src="./city-skaters/images/V1.png">
                     <h3>City Skaters</h3>
-                    <p>Skate forever!</p>
-                    <p>Unity & C# - Systems Design - Game Programming - Mobile Game Development</p>
-                </div>
-            </a>
-            <a href="./doc-gen/" class="project-link">
-                <div class="project">
-                    <img src="./doc-gen/images/Doc Gen Icon.png">
-                    <h3>Documentation Generator v0.1</h3>
-                    <p>Generate documentation directly from source code.</p>
-                    <p>WPF - C# - MVVM</p>
-                </div>
-            </a>
-            <a href="./the-hunter/" class="project-link">
-                <div class="project">
-                    <img src="./the-hunter/images/thehunter.png" alt="The Hunter Thumbnail">
-                    <h3>The Hunter</h3>
-                    <p>Fight off the evils of this world!</p>
-                    <p>Unity & C# - Systems Design - Gameplay Programming - AI Systems</p>
-                </div>
-            </a>
-
-            <a href="./all-for-one/" class="project-link">
-                <div class="project">
-                    <img src="./all-for-one/images/afo.png" alt="All For One Thumbnail">
-                    <h3>All For One</h3>
-                    <p>We fight stronger together!</p>
-                    <p>Unity & C# - Systems Design - Gameplay Programming - Collaboration</p>
+                    <p class="tagline">Skate forever!</p>
+                    <div class="skills">
+                        <p class="hard">Unity</p>
+                        <p class="hard">C#</p>
+                        <p class="hard">Systems Design</p>
+                        <p class="hard">Optimisation</p>
+                        <p class="soft">Collaboration</p>
+                    </div>
+                    <div class="icon-collection">
+                        <img src="./images/android-logo.svg">
+                        <img src="./images/construction-logo.svg">
+                        <img src="./images/gamepad.svg">
+                        <img src="./images/git-white-logo.svg">
+                    </div>
                 </div>
             </a>
 
@@ -68,35 +90,57 @@
                 <div class="project">
                     <img src="./egg-smasher/images/eggsmasher.png" alt="Egg Smasher Thumbnail">
                     <h3>Egg Smasher</h3>
-                    <p>A casual mobile game that tests your reflexes.</p>
-                    <p>Unity & C# - Google Play Games Services - Mobile Game Development - Systems Design - Collaboration</p>
+                    <p class="tagline">A casual mobile game that tests your reflexes.</p>
+                    <div class="skills">
+                        <p class="hard">Unity</p>
+                        <p class="hard">C#</p>
+                        <p class="hard">Google Play Games Services</p>
+                        <p class="soft">Collaboration</p>
+                    </div>
+                    <div class="icon-collection">
+                        <img src="./images/android-logo.svg">
+                        <img src="./images/gamepad.svg">
+                    </div>
+
                 </div>
             </a>
 
-            <a href="./job-application-tracker/" class="project-link">
+            <a href="./the-hunter/" class="project-link">
                 <div class="project">
-                    <img src="./job-application-tracker/images/JobApplicationTrackerLogo.png" alt="Job Application Tracker Thumbnail">
-                    <h3>Job Application Tracker</h3>
-                    <p>Manage your job application and track your progress</p>
-                    <p>WPF - C# - SQL</p>
+                    <img src="./the-hunter/images/thehunter.png" alt="The Hunter Thumbnail">
+                    <h3>The Hunter</h3>
+                    <p class="tagline">Fight off the evils of this world!</p>
+                    <div class="skills">
+                        <p class="hard">Unity</p>
+                        <p class="hard">C#</p>
+                        <p class="hard">Shaders</p>
+                        <p class="hard">Systems Design</p>
+                        <p class="hard">AI Systems</p>
+                    </div>
+                    <div class="icon-collection">
+                        <img src="./images/desktop-icon.svg">
+                        <img src="./images/gamepad.svg">
+                        <img src="./images/git-white-logo.svg">
+                    </div>
                 </div>
             </a>
 
-            <a href="./student-register/" class="project-link">
+            <a href="./all-for-one/" class="project-link">
                 <div class="project">
-                    <img src="./student-register/images/StudentRegister.png" alt="School Register Thumbnail">
-                    <h3>School Register</h3>
-                    <p>A system that streamlines the signing in process for students and monitoring for admins</p>
-                    <p>WPF & C# - Systems Design - Computational Design - Problem Solving - Desktop Development</p>
-                </div>
-            </a>
-
-            <a href="./sales-data-visualiser/" class="project-link">
-                <div class="project">
-                    <img src="./sales-data-visualiser/images/Sales Data Visualizer App Logo.ico">
-                    <h3>Sales Data Visualiser</h3>
-                    <p>An app that visualises sales and wastage data</p>
-                    <p>C# & Winforms - Problem Solving</p>
+                    <img src="./all-for-one/images/afo.png" alt="All For One Thumbnail">
+                    <h3>All For One</h3>
+                    <p class="tagline">We fight stronger together!</p>
+                    <div class="skills">
+                        <p class="hard">Unity</p>
+                        <p class="hard">C#</p>
+                        <p class="hard">Gameplay Systems</p>
+                        <p class="soft">Collaboration</p>
+                        <p class="soft">Game Jam</p>
+                    </div>
+                    <div class="icon-collection">
+                        <img src="./images/desktop-icon.svg">
+                        <img src="./images/gamepad.svg">
+                    </div>
                 </div>
             </a>
 
@@ -104,26 +148,136 @@
                 <div class="project">
                     <img src="./renovator-rift/images/Title.png" alt="Renovator Rift Thumnail">
                     <h3>Renovator Rift</h3>
-                    <p>Fix the broken ship!</p>
-                    <p>Unity - Producing - Project Management - Team Planning - Version Control</p>
+                    <p class="tagline">Fix the broken ship!</p>
+                    <div class="skills">
+                        <p class="hard">Unity</p>
+                        <p class="soft">Project Management</p>
+                        <p class="soft">Team Planning</p>
+                        <p class="soft">Communication</p>
+                        <p class="soft">Collaboration</p>
+                    </div>
+                    <div class="icon-collection">
+                        <img src="./images/desktop-icon.svg">
+                        <img src="./images/gamepad.svg">
+                    </div>
                 </div>
             </a>
 
+            <!-- <a href="./pong-clone/" class="project-link">
+                <div class="project">
+                    <img src="./pong-clone/images/screenshot.png" alt="Pong Clone Screenshot">
+                    <h3>Pong Clone</h3>
+                    <p class="tagline">Developed to show my understanding of physics concepts</p>
+                    <p>P5* & JavaScript</p>
+                    <div class="skills">
+                        <p class="hard">P5*</p>
+                        <p class="hard">JavaScript</p>
+                    </div>
+                    <div class="icon-collection">
+                        <img src="./images/desktop-icon.svg">
+                        <img src="./images/gamepad.svg">
+                    </div>
+                </div>
+            </a> -->
+        </section>
+
+        <div id="apps"></div>
+        <p class="seperator">Applications</p>
+        <section class="projects">
+            <a href="./doc-gen/" class="project-link">
+                <div class="project">
+                    <img src="./doc-gen/images/Doc Gen Icon.png">
+                    <h3>Documentation Generator v0.1</h3>
+                    <p class="tagline">Generate documentation directly from source code.</p>
+                    <div class="skills">
+                        <p class="hard">WPF</p>
+                        <p class="hard">C#</p>
+                        <p class="hard">XAML</p>
+                        <p class="hard">MVVM</p>
+                        <p class="hard">Systems Design</p>
+                        <p class="soft">Problem Solving</p>
+                    </div>
+                    <div class="icon-collection">
+                        <img src="./images/desktop-icon.svg">
+                        <img src="./images/construction-logo.svg">
+                        <img src="./images/git-white-logo.svg">
+                    </div>
+                </div>
+            </a>
+
+            <a href="./job-application-tracker/" class="project-link">
+                <div class="project">
+                    <img src="./job-application-tracker/images/JobApplicationTrackerLogo.png"
+                        alt="Job Application Tracker Thumbnail">
+                    <h3>Job Application Tracker</h3>
+                    <p class="tagline">Manage your job application and track your progress</p>
+                    <div class="skills">
+                        <p class="hard">WPF</p>
+                        <p class="hard">C#</p>
+                        <p class="hard">XAML</p>
+                        <p class="hard">SQL</p>
+                        <p class="hard">Systems Design</p>
+                    </div>
+                    <div class="icon-collection">
+                        <img src="./images/desktop-icon.svg">
+                        <img src="./images/lock-icon.svg">
+                    </div>
+                </div>
+            </a>
+
+            <a href="./sales-data-visualiser/" class="project-link">
+                <div class="project">
+                    <img src="./sales-data-visualiser/images/Sales Data Visualizer App Logo.ico">
+                    <h3>Sales Data Visualiser</h3>
+                    <p class="tagline">An app that visualises sales and wastage data</p>
+                    <div class="skills">
+                        <p class="hard">WinForms</p>
+                        <p class="hard">C#</p>
+                        <p class="soft">Problem Solving</p>
+                    </div>
+                    <div class="icon-collection">
+                        <img src="./images/desktop-icon.svg">
+                        <img src="./images/lock-icon.svg">
+                    </div>
+                </div>
+            </a>
+
+            <!-- <a href="./student-register/" class="project-link">
+                <div class="project">
+                    <img src="./student-register/images/StudentRegister.png" alt="School Register Thumbnail">
+                    <h3>School Register</h3>
+                    <p class="tagline">A system that streamlines the signing in process for students and monitoring for
+                        admins</p>
+                    <div class="skills">
+                        <p class="hard">WPF</p>
+                        <p class="hard">C#</p>
+                        <p class="soft">Problem Solving</p>
+                    </div>
+                    <div class="icon-collection">
+                        <img src="./images/desktop-icon.svg">
+                        <img src="./images/lock-icon.svg">
+                    </div>
+                </div>
+            </a> -->
+        </section>
+
+        <div id="other"></div>
+        <p class="seperator">Other</p>
+        <section class="projects">
             <a href="./solar-system/" class="project-link">
                 <div class="project">
                     <img src="./solar-system/images/thumbnail.png" alt="Pong Clone Screenshot">
                     <h3>Solar System</h3>
-                    <p>A simple solar system simulation</p>
-                    <p>Unity & C# & Shaders</p>
-                </div>
-            </a>
-
-            <a href="./pong-clone/" class="project-link">
-                <div class="project">
-                    <img src="./pong-clone/images/screenshot.png" alt="Pong Clone Screenshot">
-                    <h3>Pong Clone</h3>
-                    <p>A pong clone developed to show my understanding of physics concepts</p>
-                    <p>P5* & JavaScript</p>
+                    <p class="tagline">A simple solar system simulation</p>
+                    <div class="skills">
+                        <p class="hard">Unity</p>
+                        <p class="hard">C#</p>
+                        <p class="hard">Shaders</p>
+                    </div>
+                    <div class="icon-collection">
+                        <img src="./images/gamepad.svg">
+                        <img src="./images/git-white-logo.svg">
+                    </div>
                 </div>
             </a>
         </section>

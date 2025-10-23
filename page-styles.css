@@ -1,55 +1,59 @@
-main{
-    max-width: 80%;
+main {
     animation: fadeIn ease 0.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
 
-header {
-    padding: 1.5em 0;
-    text-align: center;
+h1 {
+    justify-self: center;
 }
 
-header h1 {
-    font-size: 2.5em;
-}
-
-header p {
-    font-size: 1.2em;
-    padding-top: 1em;
-    padding-bottom: 2em;
-}
-
-.download{
-    padding: 3em 0;
+.external-links,
+.jump-to {
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0em auto;
+    gap: 1em;
 }
 
-.externalPageButton{
-    text-decoration: none;
-    color: inherit;
-    display: inline-flex; 
-    justify-content:space-evenly;
-    border-radius: 50px;
-    background-color: #8158fa;
+.external-links a {
     transition: 0.2s;
 }
 
-.externalPageButton p{
-    font-weight: 500;
-    padding: 0% 0.5em;
+.external-links img {
+    width: 20px;
 }
 
-.externalPageButton:hover{
-    background-color: #9d7efb;
+.external-links a:hover {
+    transform: scale(1.2);
+}
+
+.jump-to a {
+    text-decoration: underline;
+    color: #9774ff;
+    transition: 0.1s;
+    font-weight: 500;
+}
+
+.jump-to a:hover {
     transform: scale(1.1);
+}
+
+section {
+    margin: auto;
+    padding-top: 2em;
+}
+
+section h3 {
+    color: #8158fa;
+    padding-top: 1.5em;
 }
 
 .video {
     display: flex;
     justify-content: center;
-    margin: 2em 0;
+    margin: 2em auto;
 }
 
 .video-wrapper {
@@ -74,7 +78,7 @@ header p {
         transform: translateX(-1000px);
     }
 
-    65%{
+    65% {
         transform: translateX(50px);
     }
 
@@ -88,7 +92,7 @@ header p {
         transform: translateX(1000px);
     }
 
-    65%{
+    65% {
         transform: translateX(-50px);
     }
 
@@ -118,130 +122,61 @@ header p {
 }
 
 @keyframes fadeIn {
-    0%{
+    0% {
         opacity: 0;
     }
 
-    100%{
+    100% {
         opacity: 100%;
     }
 }
 
-@media (min-width: 100px) {
-    .image-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .pageHeader h1{
-        font-size: 2.2em;
-    }
-
-    .pageHeader p{
-        font-size: 1.1em;
-    }
-
-    .description{
-        font-size: 0.9em;
-    }
-    .externalPageButton{
-        height: 1.6em;
-    }
-    .externalPageButton p{
-        font-size: 0.7em;
-    }
-}
-
-/* Grid layout for different screen sizes */
-@media (min-width: 300px) {
-    .image-grid {
-        grid-template-columns: repeat(5, 1fr);
-    }
-    .pageHeader h1{
-        font-size: 2.5em;
-    }
-
-    .pageHeader p{
-        font-size: 1.3em;
-    }
-
-    .description{
-        font-size: 1em;
-    }
-    .externalPageButton{
-        height: 2.7em;
-    }
-    .externalPageButton p{
-        font-size: 1.2em;
-    }
-}
-
-@media (min-width: 600px) {
-    .image-grid {
-        grid-template-columns: repeat(5, 1fr);
-    }
-    .pageHeader h1{
-        font-size: 3em;
-    }
-
-    .pageHeader p{
-        font-size: 1.5em;
-    }
-
-    .description{
-        font-size: 1em;
-    }
-
-    .externalPageButton{
-        height: 4.3em;
-    }
-    .externalPageButton p{
-        font-size: 2.4em;
-    }
-}
-
-@media (min-width: 900px) {
-    .image-grid {
-        grid-template-columns: repeat(6, 1fr);
-    }
-    .pageHeader h1{
-        font-size: 3.2em;
-    }
-
-    .pageHeader p{
-        font-size: 1.8em;
-    }
-
-    .description{
-        font-size: 1.1em;
-    }
-
-    .externalPageButton{
-        height: 7em;
-    }
-    .externalPageButton p{
-        font-size: 3.6em;
+@media (max-width: 1199px) {
+    .video {
+        width: 100%;
     }
 }
 
 @media (min-width: 1200px) {
-    .image-grid {
-        grid-template-columns: repeat(10, 1fr);
-    }
-    .pageHeader h1{
-        font-size: 3.5em;
+    h1 {
+        font-size: 3em;
     }
 
-    .pageHeader p{
-        font-size: 2em;
+    .jump-to a {
+        font-size: 1em;
     }
 
-    .description{
+    .video {
+        width: 70%;
+    }
+
+    section {
+        max-width: 70%;
+    }
+
+    section h3 {
         font-size: 1.2em;
     }
 
-    .externalPageButton{
-        height: 8em;
+    section p {
+        font-size: 1em;
     }
-    .externalPageButton p{
-        font-size: 5em;
+}
+
+@media (min-width: 1921px) {
+    h1 {
+        font-size: 4em;
+    }
+
+    .jump-to a {
+        font-size: 1.2em;
+    }
+
+    section h3 {
+        font-size: 1.5em;
+    }
+
+    section p {
+        font-size: 1.2em;
     }
 }
