@@ -23,7 +23,4 @@ main {
     padding: 4em 0;
     max-width: 90%;
     margin: 2em auto;
-    animation: fadeInAnimation ease 0.7s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
 }

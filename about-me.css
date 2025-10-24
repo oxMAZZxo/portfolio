@@ -1,4 +1,4 @@
-main{
+main {
     animation: fadeIn ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -10,143 +10,110 @@ header {
 }
 
 header h1 {
-    font-size: 2.5em;
-    font-weight: 700;
+    font-weight: 800;
 }
 
 header p {
-    font-size: 1.5em;
-    font-weight: 500;
+    font-weight: 600;
+    color:#8158fa
 }
 
-header p:nth-of-type(2)
-{
-    font-size: 1.5em;
-    font-weight: 350;
-    margin-bottom: 1em;
+header p:nth-of-type(2) {
+    font-weight: 450;
 }
 
-.intro {
-    padding: 0em 2em;
-    text-align: justify;
-    margin-bottom: 2em;
+section {
+    margin: 1em 0em;
 }
 
-.intro p {
-    font-size: 1em;
+
+section h3 {
+    color: #8158fa;
 }
 
 .image-grid {
-    display: grid;
-    border-radius: 10px;
+    padding: 1em 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.image-item {
     margin: auto;
-    padding: 0em 2em;
-    gap: 10px;
-    width: 100%;
-    animation: slideFromRight ease 0.7s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
 }
 
 .image-item img {
     width: 100%;
-    height: auto;
-    display: inline-block;
     border-radius: 8px;
 }
 
-@media (min-width: 100px) {
-    .image-grid {
-        grid-template-columns: repeat(3, 1fr);
+@media (min-width:300px) {
+    main {
+        width: 90%;
+    }
+
+    .image-item {
+        width: 50px;
     }
 }
 
-/* Grid layout for different screen sizes */
-@media (min-width: 300px) {
-    .image-grid {
-        grid-template-columns: repeat(5, 1fr);
-    }
-    .pageHeader h1{
-        font-size: 2.2em;
+@media (min-width:1200px) {
+    main {
+        width: 70%;
     }
 
-    .pageHeader p{
-        font-size: 1.5em;
-    }
-
-    .intro{
-        font-size: 1em;
-    }
-    
-    header p:nth-of-type(2)
-    {
-        font-size: 1em;
-    }
-}
-
-@media (min-width: 600px) {
-    .image-grid {
-        grid-template-columns: repeat(5, 1fr);
-    }
-    .pageHeader h1{
-        font-size: 3em;
-    }
-
-    .pageHeader p{
-        font-size: 2em;
-    }
-
-    .intro{
-        font-size: 1.2em;
-    }
-    
-    header p:nth-of-type(2)
-    {
-        font-size: 1.5em;
-    }
-}
-
-@media (min-width: 900px) {
-    .image-grid {
-        grid-template-columns: repeat(6, 1fr);
-    }
-    .pageHeader h1{
-        font-size: 3.5em;
-    }
-
-    .pageHeader p{
-        font-size: 2em;
-    }
-
-    .intro{
-        font-size: 1.2em;
-    }
-
-    header p:nth-of-type(2)
-    {
-        font-size: 1.5em;
-    }
-}
-
-@media (min-width: 1200px) {
-    .image-grid {
-        grid-template-columns: repeat(10, 1fr);
-    }
-    .pageHeader h1{
-        font-size: 4em;
-    }
-
-    .pageHeader p{
+    header h1 {
         font-size: 2.5em;
     }
 
-    .intro{
-        font-size: 1.4em;
+    header p {
+        font-size: 1.5em;
     }
 
-    header p:nth-of-type(2)
-    {
+    header p:nth-of-type(2) {
+        font-size: 1.3em;
+    }
+
+    section h3 {
+        font-size: 1.5em;
+    }
+
+    section p {
+        font-size: 1em;
+    }
+
+    .image-item {
+        width: 75px;
+    }
+}
+
+@media (min-width:1921px) {
+    main {
+        width: 60%;
+    }
+
+    header h1 {
+        font-size: 3em;
+    }
+
+    header p {
         font-size: 2em;
+    }
+
+    header p:nth-of-type(2) {
+        font-size: 1.7em;
+    }
+
+    section h3 {
+        font-size: 2em;
+    }
+
+    section p {
+        font-size: 1.5em;
+    }
+
+    .image-item {
+        width: 100px;
     }
 }
 
