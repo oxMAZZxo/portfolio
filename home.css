@@ -188,16 +188,16 @@ header p {
     }
 
     .links-grid{
-        grid-template-columns: repeat(3, minmax(85px, 1fr));
+        grid-template-columns: repeat(2, minmax(85px, 1fr));
         gap: 0.5em;
     }
 
     .link p:nth-of-type(1){
-        font-size: 0.8em;
+        font-size: 1em;
     }
 
     .link p:nth-of-type(2){
-        font-size: 0.5em;
+        font-size: 0.8em;
     }
     
     header h3:nth-of-type(2)
@@ -224,16 +224,16 @@ header p {
     }
 
     .links-grid{
-        grid-template-columns: repeat(4, minmax(100px, 1fr));
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
         gap: 1em;
     }
 
     .link p:nth-of-type(1){
-        font-size: 1em;
+        font-size: 1.2em;
     }
 
     .link p:nth-of-type(2){
-        font-size: 0.8em;
+        font-size: 1em;
     }
 
     header h3:nth-of-type(2)
@@ -275,7 +275,7 @@ header p {
 
 @media (min-width: 900px) {
     header h1{
-        font-size: 5.5em;
+        font-size: 3.5em;
     }
     header h3 {
         font-size: 2.5em;
@@ -288,6 +288,11 @@ header p {
     .btn{
         width: 3.5em;
         height: 3.5em;
+    }
+
+    .links-grid{
+        grid-template-columns: repeat(4, minmax(100px, 1fr));
+        gap: 1em;
     }
 
     .link p:nth-of-type(1){
@@ -306,7 +311,7 @@ header p {
 
 @media (min-width: 1200px) {
     header h1{
-        font-size: 6.5em;
+        font-size: 4em;
     }
 
     header h3 {
