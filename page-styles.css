@@ -51,6 +51,13 @@ section h3 {
     padding-top: 1.5em;
 }
 
+.download-widget{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0em auto;
+    gap: 1em;
+}
+
 .video {
     display: flex;
     justify-content: center;
